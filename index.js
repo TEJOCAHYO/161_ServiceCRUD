@@ -32,3 +32,10 @@ app.get('/', (req, res) => {
             console.error(err);
             res.status(500).send('Internal Server Error');
         });
+});
+
+// POST (Tambah Data)
+app.post('/biodata', (req, res) => {
+    const { id, nama, nim, kelas } = req.body;
+
+  
